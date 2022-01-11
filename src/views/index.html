@@ -1,0 +1,77 @@
+<!-- PAGINA PRINCIPAL -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+
+    <!-- iMPORTACION DEL "ARCHIVO HEAD.HTML"-->
+    <%- include ("partials/head.html") %>
+        <style>
+            body {
+                font-family: 'Lobster', cursive;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!-- IMPORTACION DEL "ARCHIVO NAVEGATION.HTML"-->
+    <%- include ("partials/navegation.html") %>
+
+    <!-- IMAGEN DE FONDO (LOGO DE PEWDIEPIE)-->
+        <div class="container">
+            <header class="row">
+                <div class="col-lg-12 text-center">
+                    <img src="/img/pews-logo.png" class="animated animate__bounceIn" alt="Website Logo">
+                </div>
+            </header>
+        </div>
+
+
+        <!-- CONTENEDOR DE LOS ENLACES -->
+        <div class="container-fluid" id="about">
+            <div class="row bg-dark text-white p-5 text-center">
+                <div class="col-sm-6">
+                    <i class="fab fa-instagram fa-10x"></i>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Seguime en todas mis redes sociales:</h3>
+                    <!--LINK DE INSTAGRAM -->
+                    <p>Instagram: 
+                        <a href= "https://www.instagram.com/eemibarahona/"
+                        target= "_blank">
+                        https://www.instagram.com/eemibarahona/<br>
+                        </a>
+                        <!-- LINK DE GITHUB -->
+                        Github:
+                        <a href="https://github.com/Emiliano-Barahona" target="_blank">
+                            https://github.com/Emiliano-Barahona <br>
+                        </a>
+                        <!-- LINK DE LINKEDIN -->
+                        Linkedin:
+                        <a href="https://www.linkedin.com/in/emiliano-barahona-566563217/" 
+                        target= "_blank">
+                            https://www.linkedin.com/in/emiliano-barahona-566563217/
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMPORTACION DEL ARCHIVO "FOOTER.HTML"-->
+        <%- include ("partials/footer.html") %>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
+

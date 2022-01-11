@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <!-- IMPORTACION DEL ARCHIVO "HEAD.HTML"-->
+    <%- include ("partials/head.html") %>
+        <style>
+            body {
+                font-family: 'Lobster', cursive;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!-- IMPORTACION DEL "ARCHIVO NAVEGATION.HTML"-->
+    <%- include ("partials/navegation.html") %>
+
+        <!-- FORMULARIO -->
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div class="card animated animate__bounceIn">
+                        <div class="card-header bg-dark text-white text-center">
+                            <h3> Contactame</h3>
+                        </div>
+                        <div class="car-body">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Escribe tu email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="" id="" cols="30" rows="10"
+                                        placeholder="Escribe un Mensaje"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-block">
+                                        Enviar Formulario
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
